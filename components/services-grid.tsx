@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Wrench, Zap, Hammer, Paintbrush, Droplets, Shield, Scissors, Car } from "lucide-react"
+import Link from "next/link"
 
 const services = [
   {
@@ -65,19 +66,18 @@ export function ServicesGrid() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <Card
-              key={index}
-              className="group hover:shadow-lg transition-all duration-300 cursor-pointer border-border hover:border-primary/20"
-            >
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                  <service.icon className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">{service.title}</h3>
-                <p className="text-muted-foreground text-sm mb-3">{service.description}</p>
-                <p className="text-xs text-primary font-medium">{service.count}</p>
-              </CardContent>
-            </Card>
+            <Link key={index} href={`/profesionales?categoria=${encodeURIComponent(service.title)}`}>
+              <Card className="group hover:shadow-lg transition-all duration-300 cursor-pointer border-border hover:border-primary/20">
+                <CardContent className="p-6 text-center">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                    <service.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">{service.title}</h3>
+                  <p className="text-muted-foreground text-sm mb-3">{service.description}</p>
+                  <p className="text-xs text-primary font-medium">{service.count}</p>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>
