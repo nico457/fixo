@@ -109,7 +109,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© 2024 Fixo. Todos los derechos reservados.</p>
+          <p className="text-sm text-muted-foreground">© 2025 Fixo. Todos los derechos reservados.</p>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">
               Política de Privacidad
@@ -126,3 +126,5 @@ export function Footer() {
     </footer>
   )
 }
+
+export default Footer
