@@ -222,7 +222,7 @@ export const professionals: Professional[] = [
     availability: "Disponible mañana",
     verified: true,
     completedJobs: 267,
-    image: "/professional-painter-headshot.jpg",
+    image: "/professional-painter2-headshot.jpg",
   },
   {
     id: "14",
@@ -238,7 +238,7 @@ export const professionals: Professional[] = [
     availability: "Disponible hoy",
     verified: true,
     completedJobs: 489,
-    image: "/professional-plumber-headshot.jpg",
+    image: "/professional-plumber3-headshot.jpg",
   },
   {
     id: "15",
@@ -254,7 +254,7 @@ export const professionals: Professional[] = [
     availability: "Disponible en 2 días",
     verified: true,
     completedJobs: 334,
-    image: "/professional-electrician-headshot.jpg",
+    image: "/professional-electrician3-headshot.jpg",
   },
   {
     id: "16",
@@ -270,7 +270,7 @@ export const professionals: Professional[] = [
     availability: "Disponible en 5 días",
     verified: true,
     completedJobs: 298,
-    image: "/professional-carpenter-headshot.jpg",
+    image: "/professional-carpenter3-headshot.jpg",
   },
   {
     id: "17",
@@ -286,7 +286,7 @@ export const professionals: Professional[] = [
     availability: "Disponible hoy",
     verified: true,
     completedJobs: 623,
-    image: "/professional-cleaner-headshot.jpg",
+    image: "/professional-cleaner3-headshot.jpg",
   },
   {
     id: "18",
@@ -302,7 +302,7 @@ export const professionals: Professional[] = [
     availability: "Disponible mañana",
     verified: true,
     completedJobs: 401,
-    image: "/professional-security-headshot.jpg",
+    image: "/professional-security2-headshot.jpg",
   },
   {
     id: "19",
@@ -318,7 +318,7 @@ export const professionals: Professional[] = [
     availability: "Disponible en 3 días",
     verified: true,
     completedJobs: 356,
-    image: "/professional-gardener-headshot.jpg",
+    image: "/professional-gardener2-headshot.jpg",
   },
   {
     id: "20",
@@ -334,7 +334,7 @@ export const professionals: Professional[] = [
     availability: "Disponible en 2 días",
     verified: true,
     completedJobs: 587,
-    image: "/professional-mechanic-headshot.jpg",
+    image: "/professional-mechanic2-headshot.jpg",
   },
   {
     id: "21",
@@ -350,7 +350,7 @@ export const professionals: Professional[] = [
     availability: "Disponible hoy",
     verified: true,
     completedJobs: 312,
-    image: "/professional-painter-headshot.jpg",
+    image: "/professional-painter3-headshot.jpg",
   },
   {
     id: "22",
@@ -366,7 +366,7 @@ export const professionals: Professional[] = [
     availability: "Disponible mañana",
     verified: true,
     completedJobs: 378,
-    image: "/professional-electrician2-headshot.jpg",
+    image: "/professional-electrician4-headshot.jpg",
   },
   {
     id: "23",
@@ -382,7 +382,7 @@ export const professionals: Professional[] = [
     availability: "Disponible hoy",
     verified: true,
     completedJobs: 701,
-    image: "/professional-cleaner2-headshot.jpg",
+    image: "/professional-cleaner4-headshot.jpg",
   },
   {
     id: "24",
@@ -398,7 +398,7 @@ export const professionals: Professional[] = [
     availability: "Disponible en 7 días",
     verified: true,
     completedJobs: 467,
-    image: "/professional-carpenter2-headshot.jpg",
+    image: "/professional-carpenter4-headshot.jpg",
   },
 ]
 
