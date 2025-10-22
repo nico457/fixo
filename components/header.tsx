@@ -44,10 +44,12 @@ export function Header() {
             </Button>
           </Link>
 
-          <Button variant="outline" size="sm" className="hidden md:flex bg-transparent">
-            <User className="h-4 w-4 mr-2" />
-            Soy Profesional
-          </Button>
+          <Link href="/registro-profesional">
+            <Button variant="outline" size="sm" className="hidden md:flex bg-transparent">
+              <User className="h-4 w-4 mr-2" />
+              Soy Profesional
+            </Button>
+          </Link>
 
           <Button size="sm">Iniciar Sesión</Button>
 
