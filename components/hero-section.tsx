@@ -1,12 +1,17 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Search, MapPin } from "lucide-react"
+import { Search, MapPin, Shield } from "lucide-react"
 
 export function HeroSection() {
   return (
     <section className="relative py-20 lg:py-32 bg-gradient-to-br from-background to-muted">
       <div className="container px-4">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 border border-primary/20">
+            <Shield className="w-4 h-4" />
+            <span>Garantía de 15 días en todos los servicios</span>
+          </div>
+
           <h1 className="text-4xl lg:text-6xl font-bold text-balance mb-6">
             Conecta con los mejores
             <span className="text-primary"> profesionales</span>
