@@ -1,33 +1,34 @@
 import { Button } from "@/components/ui/button"
 import { Search, Menu, User } from "lucide-react"
+import Link from "next/link"
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4">
         <div className="flex items-center gap-6">
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">F</span>
             </div>
             <span className="font-bold text-xl text-foreground">Fixo</span>
-          </div>
+          </Link>
 
           <nav className="hidden md:flex items-center gap-6">
             <a
-              href="#servicios"
+              href="/#servicios"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Servicios
             </a>
-            <a
-              href="#profesionales"
+            <Link
+              href="/profesionales"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Profesionales
-            </a>
+            </Link>
             <a
-              href="#como-funciona"
+              href="/#como-funciona"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Cómo Funciona
@@ -36,10 +37,12 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="sm" className="hidden md:flex">
-            <Search className="h-4 w-4 mr-2" />
-            Buscar Servicio
-          </Button>
+          <Link href="/profesionales">
+            <Button variant="ghost" size="sm" className="hidden md:flex">
+              <Search className="h-4 w-4 mr-2" />
+              Buscar Servicio
+            </Button>
+          </Link>
 
           <Button variant="outline" size="sm" className="hidden md:flex bg-transparent">
             <User className="h-4 w-4 mr-2" />
@@ -56,3 +59,5 @@ export function Header() {
     </header>
   )
 }
+
+export default Header
